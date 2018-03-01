@@ -1,4 +1,5 @@
-# 自动并按需import组件的loader（React组件）
+# 自动并按需加载React组件的webpack loader 
+
 
 #### 它是按需加载的，可以放心使用。
 解决第三方ui组件每次使用时都需要 `import xxx from 'xxx'`
