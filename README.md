@@ -15,17 +15,17 @@
 ...
 
 loader: [
-	'babel-loader',
-	{
-        loader: './build/auto-import-loader',
-        options: {
-            components: {
-                Layout: 'src/auto/lib/layout',
-                Button: 'src/auto/lib/button'
-            },
-            include: [resolve('src/views')],
-        }
+  'babel-loader',
+  {
+    loader: './build/auto-import-loader',
+    options: {
+      components: {
+        Layout: 'src/auto/lib/layout',
+        Button: 'src/auto/lib/button'
+      },
+      include: [resolve('src/views')],
     }
+  }
 ]
 
 ...
@@ -37,15 +37,15 @@ loader: [
 ```jsx
 
 class View extends React.Component {
-	render() {
-		return (
-			<div>
-				<Layout.Header />
+  render() {
+    return (
+      <div>
+        <Layout.Header />
 
-				<Button>button</Button>
-			</div>
-		)
-	}
+        <Button>button</Button>
+      </div>
+    )
+  }
 }
 
 ```
@@ -58,15 +58,15 @@ import Layout from 'src/auto/lib/layout'
 import Button from 'src/auto/lib/button'
 
 class View extends React.Component {
-	render() {
-		return (
-			<div>
-				<Layout.Header />
+  render() {
+    return (
+      <div>
+        <Layout.Header />
 
-				<Button>button</Button>
-			</div>
-		)
-	}
+        <Button>button</Button>
+      </div>
+    )
+  }
 }
 
 ```
@@ -77,7 +77,7 @@ class View extends React.Component {
 
 
 <Layout>
-	...
+  ...
 </Layout>
 
 
@@ -86,13 +86,13 @@ class View extends React.Component {
 
 
 <Layout.Header>
-	...
+  ...
 </Layout.Header>
 
 
 <Layout.Header />
 
 <Layout.Header
-	title={'title'}
+  title={'title'}
 />
 ```
